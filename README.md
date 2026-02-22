@@ -1,55 +1,45 @@
-# Sparkle & Shine Maid Services — Website
+# So Many Roses Maid Services
 
-A single-page marketing site for a maid/house cleaning business, built with **Next.js** for SEO and fast loading.
+Marketing site for **So Many Roses Maid Services LLC**, a professional cleaning company in the Denver, Colorado area.
 
-## Tech stack
+## Stack
 
-- **Next.js 14** (App Router)
-- **TypeScript**
-- **Tailwind CSS**
-- **Google Fonts** (Outfit, Fraunces)
+- **Next.js** (App Router) — React framework, static export for hosting
+- **TypeScript** — Typed JavaScript
+- **Tailwind CSS** — Styling
+- **EmailJS** — Contact form submissions (no backend; emails sent from the client via EmailJS)
+- **AOS** — Scroll animations
+- **hamburger-react** — Mobile menu icon
 
-## Getting started
+The site is built as a **static export** (SSG) and deployed to **GitHub Pages**. Each push to `main` triggers a GitHub Action that builds and deploys the site.
 
-1. **Install dependencies**
+## Run locally
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+npm run dev
+```
 
-2. **Run the dev server**
+Open [http://localhost:3000](http://localhost:3000).
 
-   ```bash
-   npm run dev
-   ```
+## Contact form (EmailJS)
 
-   Open [http://localhost:3000](http://localhost:3000).
+The contact form uses [EmailJS](https://www.emailjs.com/). To run it locally or for the deployed site to send mail, set these in `.env.local` (local) or as repository secrets (GitHub Actions):
 
-3. **Edit content**
+- `NEXT_PUBLIC_EMAILJS_SERVICE_ID`
+- `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`
+- `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`
 
-   - Update business name, tagline, and contact info in `src/app/page.tsx`.
-   - Adjust SEO title/description in `src/app/layout.tsx` (metadata).
-   - Replace the placeholder phone number and email in the Contact section with real details.
+See [EmailJS](https://www.emailjs.com/docs/) for setup. Do not commit `.env.local`; it is gitignored.
 
-## Deploy
+## Build
 
-- **Vercel** (recommended): Connect this repo to [Vercel](https://vercel.com); it will build and deploy automatically.
-- Or run `npm run build` and `npm run start` on any Node host.
+```bash
+npm run build
+```
 
-## Create the GitHub repo
+Output is in the `out/` directory (static files for any static host).
 
-1. [Create a new repository](https://github.com/new) on GitHub (e.g. `maid-services-website`). Do **not** add a README or .gitignore (this project already has them).
-2. In the project folder, run:
+## License
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Next.js maid services single-page site"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/maid-services-website.git
-   git push -u origin main
-   ```
-
-   Replace `YOUR_USERNAME` with the GitHub username.
-
-Done. Your friend can now share the repo, deploy to Vercel, and update the copy and contact info as needed.
+Private. All rights reserved.

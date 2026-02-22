@@ -10,12 +10,15 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-outfit)", "system-ui", "sans-serif"],
-        display: ["var(--font-fraunces)", "Georgia", "serif"],
+        display: ["var(--font-cormorant)", "Georgia", "serif"],
       },
       colors: {
-        cream: "#faf8f5",
-        sage: "#87a878",
-        forest: "#2d4a2a",
+        cream: "#fdf8f6",
+        "rose-deep": "#8b2942",
+        rose: "#b76e79",
+        "rose-light": "#e8b4bc",
+        "rose-pale": "#f9eef0",
+        leaf: "#5a7d5e",
         stone: "#5c5346",
         warm: "#c4a77d",
       },
