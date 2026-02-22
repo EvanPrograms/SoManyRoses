@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="favicon-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b2942"/>
+      <stop offset="100%" stop-color="#b76e79"/>
+    </linearGradient>
+  </defs>
+  <path d="M16 6c-1 2-3 4-6 4-2 0-4 1-5 3 0 1 0 2 1 3 2 3 5 5 9 5 4 0 7-2 9-5 1-1 1-2 1-3-1-2-3-3-5-3-3 0-5-2-6-4z" fill="url(#favicon-rose)"/>
+  <path d="M16 10c1 1 2 2 3 2 1 0 2-.5 2.5-1.5-.5 1-1.5 1.5-2.5 1.5-1 0-2-.5-3-1.5.5 1 1.5 1.5 2.5 1.5 1 0 2-.5 2.5-1.5-.5 1-1.5 1.5-2.5 1.5-1 0-2-1-3-2z" fill="#e8b4bc" opacity=".9"/>
+</svg>
