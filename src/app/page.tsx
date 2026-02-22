@@ -155,7 +155,7 @@ export default function Home() {
             <span className="block mt-1">Professional cleaning in the Denver, Colorado area</span>
           </p>
           <p className="text-stone/90 max-w-xl mx-auto mb-10">
-            We bring care, consistency, and spotless results so you can focus on what matters.
+            We bring care, consistency, and spotless results so you can focus on what matters most
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
@@ -306,9 +306,9 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="py-8 text-center text-stone text-sm border-t border-rose-light/20 bg-cream">
+      <footer className="py-5 text-center text-stone text-sm border-t border-rose-light/20 bg-cream">
         <p suppressHydrationWarning>© {new Date().getFullYear()} So Many Roses Maid Services LLC. Denver, Colorado.</p>
-        <p className="mt-2 text-stone/70">
+        <p className="mt-1 text-stone/70">
           Site by <a href="https://evanprograms.com" target="_blank" rel="noopener noreferrer" className="text-stone/80 hover:text-rose-deep transition-colors">EvanPrograms</a>
         </p>
       </footer>
