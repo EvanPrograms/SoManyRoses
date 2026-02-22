@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #faf8f5;
+  --sage: #87a878;
+  --forest: #2d4a2a;
+  --stone: #5c5346;
+  --warm: #c4a77d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-stone antialiased;
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-6 py-16 sm:px-10 lg:px-16 lg:py-24;
+  }
+}
