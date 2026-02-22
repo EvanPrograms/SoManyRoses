@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Fraunces } from "next/font/google";
+import { Outfit, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -8,29 +8,37 @@ const outfit = Outfit({
   display: "swap",
 });
 
-const fraunces = Fraunces({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cormorant",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Sparkle & Shine Maid Services | Professional House Cleaning",
+  title: "So Many Roses Maid Services LLC | Denver House Cleaning",
   description:
-    "Professional maid and house cleaning services. Trusted, reliable, and thorough. Book a one-time deep clean or recurring service. Free quotes.",
+    "Professional maid services in the Denver, Colorado area. Move-out cleans, deep cleans, one-time, biweekly, monthly & regular cleaning. Free quotes.",
   keywords: [
-    "maid service",
-    "house cleaning",
-    "professional cleaning",
+    "maid service Denver",
+    "house cleaning Denver",
+    "move out cleaning",
     "deep clean",
-    "recurring cleaning",
+    "biweekly cleaning",
+    "So Many Roses",
   ],
   openGraph: {
-    title: "Sparkle & Shine Maid Services",
-    description: "Professional house cleaning you can trust.",
+    title: "So Many Roses Maid Services LLC | Denver",
+    description: "Rose-quality cleaning in the Denver, Colorado area.",
     type: "website",
   },
   robots: "index, follow",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -39,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${fraunces.variable}`}>
+    <html lang="en" className={`${outfit.variable} ${cormorant.variable}`}>
       <body className="font-sans">{children}</body>
     </html>
   );
