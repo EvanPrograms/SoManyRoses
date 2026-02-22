@@ -149,8 +149,11 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="py-8 text-center text-stone text-sm border-t border-stone/10">
-        <p>© {new Date().getFullYear()} Sparkle & Shine Maid Services.</p>
+      <footer className="py-8 text-center text-stone text-sm border-t border-rose-light/20 bg-cream">
+        <p suppressHydrationWarning>© {new Date().getFullYear()} So Many Roses Maid Services LLC. Denver, Colorado.</p>
+        <p className="mt-2 text-stone/70">
+          Site by <a href="https://evanprograms.com" target="_blank" rel="noopener noreferrer" className="text-stone/80 hover:text-rose-deep transition-colors">EvanPrograms</a>
+        </p>
       </footer>
     </>
   );
